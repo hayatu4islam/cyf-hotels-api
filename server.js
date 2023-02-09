@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = 5000;
 // const cors = require("cors");
 // app.use(cors());
 
@@ -107,6 +108,6 @@ app.get("/customers/:customerId/bookings", function (req, res) {
 //     });
 // });
 
-app.listen(3000, function () {
-    console.log("Server is listening on port 3000. Ready to accept requests!");
+app.listen(port, function () {
+    console.log("Server is listening on port "+port+". Ready to accept requests!");
 });
